@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #34D399; /* Fresh Green */
+    --secondary-color: #3498db; /* Blue */
+    --light-gray: #f9fafb;
+    --dark-gray: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa; /* Soft background */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav .nav-link , .nav-link .dropdown-toggle{
+    color: rgb(0, 0, 0) !important;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown menu items styling */
+.navbar .dropdown-menu .dropdown-item {
+    color: black !important; /* Force text color to black */
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown item hover styling */
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: var(--primary-color); /* Change color on hover */
+    background-color: rgba(52, 211, 153, 0.1); /* Light background on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(0, 0, 0);
+}
+
+.banner-sec{
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.header-main {
+    position: relative;
+    margin: 20px auto;
+    text-align: center; 
+    padding: 20px;
+    max-width: 80%;
+    top: 25%;
+    width: 45%
+}
+
+.header-main h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-main h1{
+    font-size: 66px;
+    line-height: normal;
+}
+
+.header-main h1 span{
+    color: var(--primary);
+}
+
+.about-sec{
+    background: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: botton;
+    margin-top: 50px;
+    z-index: 0;
+}
+
+.ab-img{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: auto;
+}
+
+.title h6{
+    font-size: 36px;
+    max-width: 10px;
+    text-transform: capitalize;
+}
+
+.title h2{
+    color: var(--primary);
+}
+
+.icon-box{
+    backgrpund: #fff;
+    padding: 25px;
+}
+
+.icon-box img{
+    margin-botton: 20px;
+    width: 60px;
+    height: auto;
+}
+
+.icon-box h6{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.icon-box:hover{
+    background: var(--primary);     
+}
+
+.icon-box:hover h6 , icon-box:hover p{
+    color: #fff;
+}
+
+.detail-box{
+    position: relative;
+    overflow: hidden;
+    transition: .4s ease;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.pr-icon ul{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    transition: .4s ease;
+    transform: translateX(40px);
+}
+
+.pr-icon ul li a{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.detail.box:hover .pr-icon ul{
+    right: 10px;
+    transform: inherit; 
+}
+
+.pr-icon ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.detail-box:hover .pr-icon ul{
+    right: 10px;
+    transform: inherit;
+}
+
+.detail-box h5{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.detail-box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.pr-txt{
+    text-align: center;
+}
+
+.pr-txt span{
+    font-weight: 600;
+}
+
+.pr-img {
+    overflow: hidden;
+}
+
+.detail-box: hover img{
+    transform: scale(1.1);
+}
+
+.bg-section{
+    padding: 60px 0;
+    background: url(assets/background.png);
+    width: 100%;
+    background-size: cover;
+}
+
+.bg-text h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.bg-text p{
+    color: #fff;
+}
+
+.bg-text h2 span{
+    color: var(--primary);
+}
+
+.testimonial-box{
+    background: #f4f5f7;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.testimonial-box:before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #f4f5f7;   
+}
+
+.test-info img{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    margin-bottom: 20px;
+}
+
+.test-info{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.testimonial-box:hover {
+    background: var(--secondary);
+}
+
+.testimonial-box:hover: :before{
+    border-top: 15px solid var(--secondary);
+}
+
+.testimonial-box:hover p {
+    color: white;
+}
+
+.blog-sec {
+    background: white;
+}
+
+.blog-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 8px 4px 12px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.blog-card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: 2px solid var(--secondary); 
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: .4 ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.2);
+}
+
+.card-text{
+    padding: 25px;
+}
+
+.card-text{
+    font-size: 24px;
+}
+
+.blog-card:hover .card-text h5 {
+    color: var(--primary);
+}
+
+.footer {
+    background-color: var(--secondary);
+    padding: 50px 0;
+}
+
+.footer-img img{
+    width: 200px;
+    background-color: white;
+    padding: 20px 15px;
+}
+
+footer a, footer p {
+    color: white;
+}
+
+.f-links li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.f-links li i {
+    color: white;
+}
+
+.f-links li al{
+    color: white;
+    font-size: 18px;
+}
+
+.f-title h3{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.f-list li {
+    display: flex;
+    align-items: centerl
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.f-list li a {
+    font-size: 18px;
+}
+
+.f-list li i {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 100%;
+}
+
+.copyrights {
+    padding: 10px 0;
+    background: var(--secondary);
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.copyrights a {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+/* Button Styling */
+button.btn.btn-nav {
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-nav:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantique</title>
+
+    <!-- Google Fonts: Poppins and Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Global Style */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            /* Light greyish background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #4CAF50;
+            /* Fresh Green */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .navbar a {
+            color: white !important;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+        /* Dropdown Hover Effect */
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block !important;
+        }
+
+        /* Button Styling */
+        .btn-nav {
+            background-color: #6c9f4b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-nav:hover {
+            background-color: #5a8b40;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #A5D6A7;
+            /* Soft Green */
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/plantique.png" alt="Plantique Logo" style="height: 70px; width: 250px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Outdoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Versatile Plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-nav">Login / Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Banner section-->
+    <section class="banner-sec position-relative">
+        <img src="assets/header.jpg" alt="Banner Image" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+        <div class="header-main position-absolute top-50 start-0 translate-middle-y text-white" style="padding-left: 20px; padding-top: 20px;">
+            <h2 style="margin-top: 40px; font-family: 'Helvetica', sans-serif; text-align: left;">Welcome to Plantique</h2>
+            <h1 style="font-family: 'Helvetica', sans-serif; text-align: left;">Your ultimate guide to plants and gardening tips.</h1>
+            <p style="font-family: 'Helvetica', sans-serif; text-align: left;">Learn how to take care of your plants and make your home feel alive and vibrant!</p>
+            <button type="button" class="btn btn-nav">About Plants</button>
+            <button type="button" class="btn btn-nav bg-dark">Read More</button>
+        </div>
+    </section>
+    
+
+        
+    </section>
+                <a class="navbar-brand" href="#">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Outdoor Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Versatile Plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-nav">Login / Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--About section-->
+    <section class="py-5 about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <div class="ab-img"><img src="assets/about.jpg" alt=About Us></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-txt">
+                        <div class=" " title>
+                            <h6>About Us</h6>
+                            <h2>Learn about more plants!</h2>
+                        </div>
+                        <p>aboutusaboutusaboutus</p>
+                        <p>aboutusaboutusaboutus</p>
+                        <button type="button" class="btn btn-nav">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-boxes mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <img src="assets/icon1.png" alt="Icon1">
+                            <h6>Pure Air</h6>
+                            <p>loremipsumdolor dhvbkjxb khab lbgcsdv</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <img src="assets/icon2.png" alt="Icon2">
+                            <h6>Good for Environment</h6>
+                            <p>loremipsumdolor dhvbkjxb khab lbgcsdv</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <img src="assets/icon3.png" alt="Icon3">
+                            <h6>Plant Care</h6>
+                            <p>loremipsumdolor dhvbkjxb khab lbgcsdv</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-box">
+                            <img src="assets/icon4.png" alt="Icon4">
+                            <h6>Easy to Do</h6>
+                            <p>loremipsumdolor dhvbkjxb khab lbgcsdv</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 plantdetail sec">
+        <div class="container">
+            <div clas="title text-centre w-auto m-auto">
+                <h6>Our Plants</h6>
+                <h2>Explore our wide <span>range of plants</span></h2>
+                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="detail-box">
+                        <div class="pr-img"><img src="assets/detail1.png" alt=""></div>
+                        <div class="pr-icon">
+                            <ul>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="pr-txt">
+                            <h5>Alique furniture</h5>
+                            <span class="price">$30</span>
+                        </div>
+                    </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-3">
+                                    <div class="detail-box">
+                                        <div class="pr-img"><img src="assets/detail2.png" alt=""></div>
+                                        <div class="pr-icon">
+                                            <ul>
+                                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                <li><a href=""><i class="fa-solid fa-cart shopping"></i></a></li>
+                                                <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pr-txt">
+                                            <h5>Indoor Plant</h5>
+                                            <span class="price">$55</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-3">
+                                        <div class="detail-box">
+                                            <div class="pr-img"><img src="assets/detail3.png" alt=""></div>
+                                            <div class="pr-icon">
+                                                <ul>
+                                                    <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                    <li><a href=""><i class="fa-solid fa-cart shopping"></i></a></li>
+                                                    <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="pr-txt">
+                                                <h5>Alique plant</h5>
+                                                <span class="price">$50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-3">
+                                            <div class="detail-box">
+                                                <div class="pr-img"><img src="assets/detail4.png" alt=""></div>
+                                                <div class="pr-icon">
+                                                    <ul>
+                                                        <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                        <li><a href=""><i class="fa-solid fa-cart shopping"></i></a></li>
+                                                        <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="pr-txt">
+                                                    <h5>Large House Plant</h5>
+                                                    <span class="price">$20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-3">
+                                                <div class="detail-box">
+                                                    <div class="pr-img"><img src="assets/detail5.png" alt=""></div>
+                                                    <div class="pr-icon">
+                                                        <ul>
+                                                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                            <li><a href=""><i class="fa-solid fa-cart shopping"></i></a></li>
+                                                            <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="pr-txt">
+                                                        <h5>Tropical Plant</h5>
+                                                        <span class="price">$20</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-3">
+                                                <div class="detail-box">
+                                                    <div class="pr-img"><img src="assets/detail6.png" alt=""></div>
+                                                    <div class="pr-icon">
+                                                        <ul>
+                                                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                            <li><a href=""><i class="fa-solid fa-cart shopping"></i></a></li>
+                                                            <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="pr-txt">
+                                                        <h5>Farmer Exotic Plant</h5>
+                                                        <span class="price">$30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-3">
+                                                <div class="detail-box">
+                                                    <div class="pr-img"><img src="assets/detail7.png" alt=""></div>
+                                                    <div class="pr-icon">
+                                                        <ul>
+                                                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                                            <li><a href=""><i class="fa-solid fa-cart shopping"></i></a>
+                                                            </li>
+                                                            <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="pr-txt">
+                                                        <h5>Money Plant Indoor</h5>
+                                                        <span class="price">$20</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="row mt-4">
+                                            <div class="col-md-3">
+                                                <div class="detail-box">
+                                                    <div class="pr-img"><img src="assets/detail8.png" alt=""></div>
+                                                    <div class="pr-icon">
+                                                        <ul>
+                                                            <li><a href=""><i class="fa-regular fa-heart"></i></a>
+                                                            </li>
+                                                            <li><a href=""><i
+                                                                        class="fa-solid fa-cart shopping"></i></a>
+                                                            </li>
+                                                            <li><a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="pr-txt">
+                                                        <h5>TropiCo3 Plant</h5>
+                                                        <span class="price">$20</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+    </section>
+
+    <section class="bg-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="bg-text">
+                        <h2>Transform your space <span>by adding plants</span></h2>
+                        <p>lorem ipsum lorem ipsum</p>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <button type="button" class="btn btn-nav">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="gallery-box">
+                        <div class="gal-img"><img src="assets/gallery1.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-lh-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="gallery-box">
+                                <div class="gal-img"><img src="assets/gallery2.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="gallery-box">
+                                <div class="gal-img"><img src="assets/gallery4.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="gallery-box">
+                                <div class="gal-img"><img src="assets/gallery3.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials-sec py-5">
+        <div class="container">
+            <div class="title text-center w-75 mx-auto">
+                <h6>Testimonials</h6>
+                <h2>What people<span>are saying</span></h2>
+                <p>lorem ipsum lorem ipsum loremm ipsum</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </div>
+                    <div class="test-info">
+                        <img src="assets/pic1" alt="">
+                        <h6>David Thoreau</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </div>
+                    <div class="test-info">
+                        <img src="assets/pic2" alt="">
+                        <h6>Sophia Martin</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-box">
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </div>
+                    <div class="test-info">
+                        <img src="assets/pic3" alt="">
+                        <h6>Abigail Ava</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center w-75 mx-auto">
+                    <h6>Blogs</h6>
+                    <h2>Our<span>Blogs</span></h2>
+                    <p>lorem ipsum lorem ipsum loremm ipsum</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="card-img"><img src="assets/blog1.png" alt=""></div>
+                            <div class="card-text">
+                                <h5>How to Plant a Succulent</h5>
+                                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="card-img"><img src="assets/blog2.png" alt=""></div>
+                            <div class="card-text">
+                                <h5>How to Plant a Succulent</h5>
+                                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="card-img"><img src="assets/blog3.png" alt=""></div>
+                            <div class="card-text">
+                                <h5>How to Plant a Succulent</h5>
+                                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-img w-75">
+                        <img src="assets/plantique.png" alt="">
+                        <p class="mt-4">lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="f-title"><h3>Quick Links</h3></div>
+                    <ul class="f-links">
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Home</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">About</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Blogs</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Products</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="f-title"><h3>Products</h3></div>
+                    <ul class="f-links">
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Ornaments</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Indoor plants</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Money plants</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Flowers</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="">Herbs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <div class="f-title"><h3>Contact Us</h3></div>
+                    <ul class="f-list">
+                        <li><i class="fa-solid fa-location-dot"></i><a href="">lorem ipsum lorem ipsum</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="">+1 (440)347-5586</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="">support@plantique.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+        <a href="">Copirights Reserved @2025 Plantique</a>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
